@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,8 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <script src="/js/index.js"></script>
 </head>
+
 <body>
     <div class="wrapper">
         <div class="scoreboard">
@@ -41,16 +42,20 @@
                 </div>
             </div>
             <div class="referee">
-                <div class="decision"><h1>YOU WIN</h1></div>
-                <div class="newGame">PLAY AGAIN</div>
+                <div class="decision">
+                    <h1>YOU WIN</h1>
+                </div>
+                <div class="newGame" onclick="restartGame()">PLAY AGAIN</div>
             </div>
             <div class="computerhand">
                 <h1>The HOUSE PICKED</h1>
                 <div class="handImageContainer">
-                    <img src="/images/Scissors.png">
+                    <img id="computerPickImage" src="/images/Scissors.png">
                 </div>
             </div>
         </div>
-    </div> 
+    </div>
+    <script src="/js/index.js"></script>
 </body>
+
 </html>
